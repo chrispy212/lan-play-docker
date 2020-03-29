@@ -1,5 +1,5 @@
 FROM alpine:3.7
-LABEL maintainer="Chris Petersen <christianlundpetersen@gmail.com>"
+LABEL maintainer="Christian Petersen <christianlundpetersen@gmail.com>"
 
 RUN apk add --no-cache libpcap0.8-dev
 RUN apk add --no-cache libuv1-dev
