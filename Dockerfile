@@ -1,12 +1,14 @@
 FROM ubuntu:18.04
 LABEL maintainer="Christian Petersen <christianlundpetersen@gmail.com>"
 
-ARG SERVER_ADDRESS=switch.lan-play.com:11451
 
 RUN apt-get update \
   && apt-get install -y libpcap0.8-dev libuv1-dev curl
 
 RUN mkdir /app
+RUN mkdir /config
+COPY ./config /config
+
 
 WORKDIR /app
 
@@ -14,4 +16,4 @@ RUN curl -L -o lan-play-linux https://github.com/spacemeowx2/switch-lan-play/rel
 
 RUN chmod +x lan-play-linux
 
-CMD ["./lan-play-linux", "--relay-server-addr", "${SERVER_ADDRESS}"]
+CMD ["./lan-play-linux", "--relay-server-addr", "$(< /config/server.txt"]
