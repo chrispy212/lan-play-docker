@@ -6,8 +6,8 @@ RUN apt-get update \
 
 RUN mkdir /config
 RUN cd /config
-RUN wget https://github.com/spacemeowx2/switch-lan-play/releases/download/v0.2.1/lan-play-linux
+RUN curl -L -o lan-play-linux https://github.com/spacemeowx2/switch-lan-play/releases/download/v0.2.1/lan-play-linux
 
-ENTRYPOINT ["./lan-play-linux"]
+RUN chmod +x lan-play-linux
 
-RUN echo "switch.lan-play.com:11451"
+ENTRYPOINT ["./lan-play-linux --relay-server-addr switch.lan-play.com:11451"]
