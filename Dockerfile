@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 LABEL maintainer="Christian Petersen <christianlundpetersen@gmail.com>"
 
 RUN apt-get update \
-  && apt-get install -y libpcap0.8-dev libuv1-dev
+  && apt-get install -y libpcap0.8-dev libuv1-dev curl
 
 RUN mkdir /config
 RUN cd /config
