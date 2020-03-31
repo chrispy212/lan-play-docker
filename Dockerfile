@@ -16,6 +16,4 @@ RUN curl -L -o lan-play-linux https://github.com/spacemeowx2/switch-lan-play/rel
 
 RUN chmod +x lan-play-linux
 
-RUN echo $(< /config/server.txt)
-
-CMD ["./lan-play-linux", "--relay-server-addr", "$(cat /config/server.txt)"]
+CMD ["./start.sh"]
