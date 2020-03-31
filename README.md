@@ -11,10 +11,10 @@ These instructions will enable you to run this docker container on a host on you
 You will need the following:
 
 ```
-A machine on your network running Docker ([Windows, MacOS](https://www.docker.com/products/docker-desktop) or Linux)
-A server to connect to (Seee [lan-play](https://www.lan-play.com/) or [host your own](https://github.com/spacemeowx2/switch-lan-play))
-A Nintendo Switch [configured for lan-play](https://www.lan-play.com/install)
-(Optional) [ldn_mitm](https://github.com/spacemeowx2/ldn_mitm) if you wish to play Local Wireless games over LAN instead e.g. Animal Crossing
+* A machine on your network running Docker ([Windows, MacOS](https://www.docker.com/products/docker-desktop) or Linux)
+* A server to connect to (Seee [lan-play](https://www.lan-play.com/) or [host your own](https://github.com/spacemeowx2/switch-lan-play))
+* A Nintendo Switch [configured for lan-play](https://www.lan-play.com/install)
+* (Optional) [ldn_mitm](https://github.com/spacemeowx2/ldn_mitm) if you wish to play Local Wireless games over LAN instead e.g. Animal Crossing
 
 ```
 
