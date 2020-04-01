@@ -34,4 +34,4 @@ If no server.txt exists, create it in Notepad or similar. The format is just the
 
 ## Acknowledgments
 
-* [spacemeowx2](https://github.com/spacemeowx2/switch-lan-play) for doing all the legwork
+* [spacemeowx2](https://github.com/spacemeowx2/switch-lan-play) for writing lan-play-linux; I just put it in a docker
