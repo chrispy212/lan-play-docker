@@ -13,7 +13,7 @@ COPY ./config /config
 
 WORKDIR /app
 
-RUN curl -L -o lan-play-linux https://github.com/spacemeowx2/switch-lan-play/releases/download/v0.2.3/lan-play-linux
+RUN curl -L -o lan-play-linux https://github.com/spacemeowx2/switch-lan-play/releases/latest/download/lan-play-linux
 
 RUN chmod +x lan-play-linux
 RUN chmod +x start.sh
